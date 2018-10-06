@@ -69,7 +69,7 @@ section {
 }
 .filter{
     text-align: right;
-    height:10em;
+    height:5em;
     margin-top:2em;
     .button{
         padding: 1em;
@@ -77,3 +77,83 @@ section {
         @include buttons;
     }
 }
+.products{
+    height:50em;
+    background: $bkg_section;
+    /*margin:0 auto;*/
+    .pict{
+        margin: 2em 20em;
+    .info{
+        display:none;
+        padding:1em;
+        text-align: center;
+        text-decoration: none;
+        h5{
+            color:$red;
+        }  
+        h3{
+            text-transform: uppercase;
+            color:$main_font;
+        }
+        
+    }
+    img{
+        width:20%;
+        float:left;
+        border-radius: 50%;
+        @include providnost(0.7);
+    }
+    &:hover {
+        img{
+            @include providnost(1);
+        }
+        .info{
+            display: block;
+           
+
+        }
+     
+     
+    }
+}
+        
+}
+#item1{
+    display: inline-block;
+    width:60%;
+    img{
+        float: left;
+    }
+    .info{
+        float:right;
+    }
+}
+#item2{
+    display: inline-block;
+    width:60%;
+    margin-left:20%;
+    img{
+        float: right;
+    }
+    .info{
+        float:left;
+    }
+
+}
+#item3{
+    display:inline-block;
+    width:60%;
+    img{
+        float:left;
+    }
+    .info{
+        float:right;
+    }
+}
+
+
+
+
+    
+  
+

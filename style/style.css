@@ -68,7 +68,7 @@ section {
 
 .filter {
   text-align: right;
-  height: 10em;
+  height: 5em;
   margin-top: 2em; }
   .filter .button {
     padding: 1em;
@@ -82,5 +82,64 @@ section {
     .filter .button:hover {
       background-color: #cfd1d3;
       color: white; }
+
+.products {
+  height: 50em;
+  background: #f3f7f9;
+  /*margin:0 auto;*/ }
+  .products .pict {
+    margin: 2em 20em; }
+    .products .pict .info {
+      display: none;
+      padding: 1em;
+      text-align: center;
+      text-decoration: none; }
+      .products .pict .info h5 {
+        color: #f38181; }
+      .products .pict .info h3 {
+        text-transform: uppercase;
+        color: #797979; }
+    .products .pict img {
+      width: 20%;
+      float: left;
+      border-radius: 50%;
+      -khtml-opacity: 0.7;
+      -moz-opacity: 0.7;
+      opacity: 0.7;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+      filter: alpha(opacity=70); }
+    .products .pict:hover img {
+      -khtml-opacity: 1;
+      -moz-opacity: 1;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      filter: alpha(opacity=100); }
+    .products .pict:hover .info {
+      display: block; }
+
+#item1 {
+  display: inline-block;
+  width: 60%; }
+  #item1 img {
+    float: left; }
+  #item1 .info {
+    float: right; }
+
+#item2 {
+  display: inline-block;
+  width: 60%;
+  margin-left: 20%; }
+  #item2 img {
+    float: right; }
+  #item2 .info {
+    float: left; }
+
+#item3 {
+  display: inline-block;
+  width: 60%; }
+  #item3 img {
+    float: left; }
+  #item3 .info {
+    float: right; }
 
 /*# sourceMappingURL=style.css.map */
