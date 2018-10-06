@@ -151,9 +151,51 @@ section {
     }
 }
 
+.pricing {
+	h1 {
+		font-size: 2em;
+		color: $heading_color;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 1.5em;
+	}
+}
 
 
+.pricing {
+	color: $main_font;
+	text-align: center;
 
-    
-  
+	.pricingTable {
+		width: 60%;
+		margin: 3em auto;
+		border-collapse: collapse;
 
+		th, td {
+			padding: .5em;
+		}
+
+		.orange {
+			background: $red;
+			color: #fff;
+		}
+
+		.darkCol {
+			background: $blue_dark;
+			color: #fff;
+			font-weight: bold;
+		}
+
+		thead {
+			.darkCol {
+				border-right: 1px solid $main_font;
+			}
+		}
+
+		tbody {
+			td {
+				border: 1px solid $main_font;
+			}
+		}
+	} 
+}

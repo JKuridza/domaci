@@ -142,4 +142,32 @@ section {
   #item3 .info {
     float: right; }
 
+.pricing h1 {
+  font-size: 2em;
+  color: #374249;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.5em; }
+
+.pricing {
+  color: #797979;
+  text-align: center; }
+  .pricing .pricingTable {
+    width: 60%;
+    margin: 3em auto;
+    border-collapse: collapse; }
+    .pricing .pricingTable th, .pricing .pricingTable td {
+      padding: .5em; }
+    .pricing .pricingTable .orange {
+      background: #f38181;
+      color: #fff; }
+    .pricing .pricingTable .darkCol {
+      background: #374249;
+      color: #fff;
+      font-weight: bold; }
+    .pricing .pricingTable thead .darkCol {
+      border-right: 1px solid #797979; }
+    .pricing .pricingTable tbody td {
+      border: 1px solid #797979; }
+
 /*# sourceMappingURL=style.css.map */
