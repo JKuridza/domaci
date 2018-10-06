@@ -37,4 +37,33 @@ header {
       height: 100%;
       float: right; }
 
+section {
+  width: 100%;
+  /*padding: 3em 15%;*/ }
+  section:before, section:after {
+    content: "";
+    display: table; }
+  section:after {
+    clear: both; }
+
+.intro {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url("../slike/intro.jpg");
+  background-size: cover;
+  height: 45em; }
+  .intro .heading {
+    /*display:block;*/
+    /*@include providnost(0.3);*/
+    background: rgba(55, 66, 73, 0.6);
+    margin-top: 37em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; }
+    .intro .heading h1, .intro .heading h3, .intro .heading h4 {
+      color: white;
+      text-align: center;
+      line-height: 0.5em; }
+
 /*# sourceMappingURL=style.css.map */

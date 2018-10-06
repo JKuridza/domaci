@@ -8,3 +8,29 @@
 	    clear: both;
 	}
 }
+@mixin cover_background {
+	-webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+@mixin providnost($opacity) {
+	-khtml-opacity: $opacity;
+	  -moz-opacity: $opacity;
+	       opacity: $opacity;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity*100})";
+		filter: alpha(opacity=$opacity*100);
+}
+@mixin buttons{
+    text-decoration: none;
+    background-color: white;
+    color: $main_font;
+    padding: 1em 1.5em;
+    border: 0.05em solid $main_font;
+    border-radius: 5em / 5em;
+    &:hover{
+        background-color: $buttons_hover;
+        color: white;
+
+    }
+}

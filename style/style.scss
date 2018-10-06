@@ -15,6 +15,7 @@ header{
         text-align: right;
         ul{
             list-style: none;
+            
             li{
                 color: white;
                 display: inline-block;
@@ -41,4 +42,28 @@ header{
 			float: right;
 		}
     }
+}
+section {
+	width: 100%;
+	/*padding: 3em 15%;*/
+	@include clearfix;
+}
+.intro{
+    @include cover_background;
+    background: url("../slike/intro.jpg");
+    background-size: cover;
+    height:45em;
+    .heading{
+        /*display:block;*/
+        /*@include providnost(0.3);*/
+        background: rgba(55, 66, 73, 0.6);
+        margin-top: 37em;;
+        padding-top:0.5em;
+        padding-bottom: 0.5em;
+    h1, h3, h4{
+        color:white;
+        text-align: center;
+        line-height: 0.5em;
+    }
+}
 }
