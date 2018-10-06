@@ -142,7 +142,7 @@ section {
   #item3 .info {
     float: right; }
 
-.pricing h1 {
+.contact h1, .pricing h1 {
   font-size: 2em;
   color: #374249;
   text-align: center;
@@ -169,5 +169,44 @@ section {
       border-right: 1px solid #797979; }
     .pricing .pricingTable tbody td {
       border: 1px solid #797979; }
+
+.contact {
+  background: #f3f7f9; }
+  .contact .mapHolder {
+    float: left;
+    margin: 1em 3em;
+    width: 25%; }
+    .contact .mapHolder iframe {
+      width: 100%; }
+  .contact form {
+    width: 60%;
+    margin: 1em;
+    float: right;
+    padding: 1em;
+    background: #f38181; }
+    .contact form .contactInput {
+      float: left;
+      padding: .5em;
+      color: #374249;
+      border: none;
+      margin: 1em; }
+    .contact form select {
+      width: 20%; }
+    .contact form .contactInput[type="text"] {
+      float: right;
+      width: 70%; }
+    .contact form .contactInput[type="email"] {
+      width: 96%; }
+    .contact form textarea.contactInput {
+      width: 96%; }
+
+footer {
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+  background: #374249;
+  color: #fff; }
+  footer span {
+    color: #f38181; }
 
 /*# sourceMappingURL=style.css.map */

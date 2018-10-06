@@ -151,7 +151,7 @@ section {
     }
 }
 
-.pricing {
+.contact, .pricing {
 	h1 {
 		font-size: 2em;
 		color: $heading_color;
@@ -198,4 +198,59 @@ section {
 			}
 		}
 	} 
+}
+.contact {
+	background: $bkg_section;
+
+	.mapHolder {
+		float: left;
+		margin: 1em 3em;
+		width: 25%;
+
+		iframe {
+			width: 100%;
+		}
+	}
+
+	form {
+		width: 60%;
+		margin: 1em;
+		float: right;
+		padding: 1em;
+		background: $red;
+
+		.contactInput {
+			float: left;
+			padding: .5em;
+			color: $blue_dark;
+			border: none;
+			margin: 1em;
+		}
+
+		select {
+			width: 20%;
+		}
+
+		.contactInput[type="text"] {
+			float: right;
+			width: 70%;
+		}
+
+		.contactInput[type="email"] {
+			width: 96%;
+		}
+
+		textarea.contactInput {
+			width: 96%;
+		}
+	}
+}
+footer { 
+	padding: 1em;
+	text-align: center;
+	width: 100%;
+	background: $blue_dark;
+	color: #fff;
+
+	span { color: $red; }
 }
