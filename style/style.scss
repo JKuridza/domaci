@@ -60,10 +60,20 @@ section {
         margin-top: 37em;;
         padding-top:0.5em;
         padding-bottom: 0.5em;
-    h1, h3, h4{
-        color:white;
-        text-align: center;
-        line-height: 0.5em;
+       h1, h3, h4{
+            color:white;
+            text-align: center;
+            line-height: 0.5em;
     }
 }
+}
+.filter{
+    text-align: right;
+    height:10em;
+    margin-top:2em;
+    .button{
+        padding: 1em;
+        margin: 1em 2em;
+        @include buttons;
+    }
 }

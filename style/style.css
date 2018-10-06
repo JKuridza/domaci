@@ -66,4 +66,21 @@ section {
       text-align: center;
       line-height: 0.5em; }
 
+.filter {
+  text-align: right;
+  height: 10em;
+  margin-top: 2em; }
+  .filter .button {
+    padding: 1em;
+    margin: 1em 2em;
+    text-decoration: none;
+    background-color: white;
+    color: #797979;
+    padding: 1em 1.5em;
+    border: 0.05em solid #797979;
+    border-radius: 5em / 5em; }
+    .filter .button:hover {
+      background-color: #cfd1d3;
+      color: white; }
+
 /*# sourceMappingURL=style.css.map */
