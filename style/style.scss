@@ -1,11 +1,16 @@
 @import "vars";
 @import "mixins";
 
+*{
+    margin-top:0;
+    
+}
 body{
     margin:0;
     padding:0;
-    font-family: $font;
+    font-family: $font;   
 }
+
 
 header{
     background-color: $blue_dark;
@@ -45,7 +50,6 @@ header{
 }
 section {
 	width: 100%;
-	/*padding: 3em 15%;*/
 	@include clearfix;
 }
 .intro{
@@ -164,7 +168,10 @@ section {
 
 .pricing {
 	color: $main_font;
-	text-align: center;
+    text-align: center;
+    a{
+        display: none;
+    }
 
 	.pricingTable {
 		width: 60%;
@@ -254,3 +261,265 @@ footer {
 
 	span { color: $red; }
 }
+
+@media screen and(max-width: 1100px){
+    .contact {
+        background: $bkg_section;
+        padding: 2em;
+    
+        .mapHolder {
+            float: none;
+            margin:0 auto ;
+            width: 50%;
+    
+            iframe {
+                width: 100%;
+            }
+        }
+    
+        form {
+            width: 80%;
+            margin-top:1em;
+            float: left;
+            padding: 1em;
+            background: $red;
+    
+            .contactInput {
+                float: left;
+                padding: .5em;
+                color: $blue_dark;
+                border: none;
+                margin: 1em;
+            }
+    
+            select {
+                width: 20%;
+            }
+    
+            .contactInput[type="text"] {
+                float: right;
+                width: 70%;
+            }
+    
+            .contactInput[type="email"] {
+                width: 96%;
+            }
+    
+            textarea.contactInput {
+                width: 96%;
+            }
+        }
+    }
+
+}
+@media screen and(max-width: 850px){
+    .contact {
+        background: $bkg_section;
+        padding: 2em;
+    
+        .mapHolder {
+            float: none;
+            margin:0 auto ;
+            width: 50%;
+    
+            iframe {
+                width: 100%;
+            }
+        }
+    
+        form {
+            width: 80%;
+            margin-top:1em;
+            float: left;
+            padding: 1em;
+            background: $red;
+    
+            .contactInput {
+                float: left;
+                padding: .5em;
+                color: $blue_dark;
+                border: none;
+                margin: 1em;
+            }
+    
+            select {
+                width: 96%;
+            }
+    
+            .contactInput[type="text"] {
+                float: right;
+                width: 96%;
+            }
+    
+            .contactInput[type="email"] {
+                width: 96%;
+            }
+    
+            textarea.contactInput {
+                width: 96%;
+            }
+        }
+    }
+    .products{
+        height:30em;
+    }
+
+}
+  
+@media screen and(max-width: 650px)  {
+    header{
+        background-color: $blue_dark;
+        width:100%;
+        height:auto;
+        nav{
+            text-align: right;
+            ul{
+                list-style: none;
+                
+                li{
+                    color: white;
+                    width:100%;
+                    padding:1em;
+                    text-align: center;
+                    a {
+                        color: #fff;
+                        vertical-align: middle;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+             }
+        }
+        .menu{
+            height: 10%;
+            width:100%;
+            background-color: $red;
+            float:right;
+            margin-left:2em;
+            img {
+                height: 10%;
+                float: left;
+            }
+        }
+    }
+    *{
+        @include main;
+    }
+    .intro{
+    @include cover_background;
+    background:black;
+    height:15em;
+    .heading{
+        /*display:block;*/
+        /*@include providnost(0.3);*/
+        background: black;
+        margin-top: 5em;
+        padding-top:0.5em;
+        padding-bottom: 0.5em;
+       h1, h3, h4{
+            color:white;
+            text-align: center;
+            line-height: 1em;
+            font-size: 2em;
+    }
+}
+}
+.filter{
+    text-align: center;
+    height:4em;
+    margin-top:1em;
+    .button{
+        padding: 0.5em;
+        margin: 0 auto;
+        @include buttons;
+    }
+}
+.products{
+    height:25em;
+    background: $bkg_section;
+    margin:0 auto;
+    .pict{
+        margin: 0 auto;
+       
+    .info{
+        display:block;
+        padding:0.5em;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+    img{
+        width:20%;
+        float:none;
+        border-radius: 50%;
+        @include providnost(1);
+        
+}
+}
+#item1{
+    height:auto;
+    width:auto;
+    img{
+        float: none;
+        margin:0 auto;
+        display:block;
+    }
+    .info{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+#item2{
+    height:auto;
+    width:auto;
+    
+    .info{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    img{
+        float: none;
+        margin:0 auto;
+        display:block;
+    }
+
+}
+#item3{
+    height:auto;
+    width:auto;
+    img{
+       
+        float: none;
+        margin:0 auto;
+        display:block;
+    }
+    .info{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+.pricing {
+	color: $main_font;
+	text-align: center;
+
+	.pricingTable {
+		display:none;
+}
+a{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    @include buttons;
+}
+}
+}
+
+    

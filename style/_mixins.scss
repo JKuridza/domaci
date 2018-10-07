@@ -8,6 +8,15 @@
 	    clear: both;
 	}
 }
+@mixin main {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		
+	}
+}
+
 @mixin cover_background {
 	-webkit-background-size: cover;
      -moz-background-size: cover;
